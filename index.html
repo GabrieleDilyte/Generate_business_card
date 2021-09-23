@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Business Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/61880a5eb3.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="cardForm">
+      <h1>Generate your business card</h1>
+      <form>
+        <label for="fullName">Full name:</label>
+        <input type="text" id="fullName" name="fullName" />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <label for="address">Business address:</label>
+        <input type="text" id="address" name="address" />
+        <label for="phoneNumber">Phone number:</label>
+        <input type="number" id="phoneNumber" name="phoneNumber" />
+        <label for="description">Description:</label>
+        <input type="description" id="description" name="description" />
+      </form>
+      <button type="button" id="generate">Generate</button>
+    </div>
+    <div class="card">
+      <div class="about-info">
+        <h2>Your Name</h2>
+        <h4>Description</h4>
+      </div>
+      <div class="contact-info">
+        <ul>
+          <li>
+            <i class="fas fa-phone"></i
+            ><span id="phoneInput">+37060000000</span>
+          </li>
+          <li>
+            <i class="fas fa-map-marker-alt"></i
+            ><span id="addressInput">Your address</span>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <span id="emailInput">Your email </span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
